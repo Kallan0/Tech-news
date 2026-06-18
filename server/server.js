@@ -13,7 +13,8 @@ const ArticleSchema = new mongoose.Schema({
   title: String,
   url: String,
   score: Number,
-  author: String
+  author: String,
+  category: String
 }, { collection: 'articles' }); // Crucial: matches the Python collection name
 
 const Article = mongoose.model('Article', ArticleSchema);
